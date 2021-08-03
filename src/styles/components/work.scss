@@ -1,0 +1,21 @@
+.component-work{
+    height: 300px;
+    display: flex;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 640px) {
+        width: 100%;
+    }
+
+    &__thumbnail{
+        background-image: url('../../assets/images/background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 33.3%;
+    }
+
+    &__description{
+        width: 66.7%;
+    }
+}

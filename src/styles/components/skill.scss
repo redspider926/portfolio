@@ -14,14 +14,13 @@
 
     &__chart{
         background-color: gray;
-        height: 20px;
+        height: 5px;
         flex: 1;
-        box-shadow: 0px 0px 10px gray;
         transition: 0.3s;
 
         &-value{
             height: 100%;
-            background-color: white;
+            background-color: whitesmoke;
             position: relative;
 
             &-hover{
@@ -38,11 +37,11 @@
     }
 
     &:hover &__chart{
-        background-color: wheat;
+        background-color: white;
     }
 
     &:hover &__title{
         color: blueviolet;
-        margin-left: 30px;
+        margin-left: 10%;
     }
 }
