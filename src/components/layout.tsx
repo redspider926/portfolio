@@ -1,9 +1,11 @@
 import React from 'react'
-import HomeIcon from '../assets/images/icons/home.svg'
+import { useScrollTop } from '../hooks'
 
 const Layout: React.FC = ({ children }) => {
+    const scrollTop = useScrollTop();
+
     return <div className="component-layout">
-        <div className="component-layout-header">
+        <div className="component-layout-header" style={{ backgroundColor: scrollTop > 0 ? 'blueviolet' : 'transparent' }}>
             <div className="component-layout-header__logo"></div>
             <div className="component-layout-header__nav">
                 <div className="component-layout-header__nav-item">
