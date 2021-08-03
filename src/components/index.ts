@@ -1,5 +1,7 @@
 import Layout from './layout'
+import Skill from './skill'
 
 export {
-    Layout
+    Layout,
+    Skill
 }

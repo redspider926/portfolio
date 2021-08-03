@@ -1,6 +1,7 @@
 .page-main{
     &__section-1, &__section-2, &__section-3, &__section-4{
         min-height: 100vh;
+        padding-top: 100px;
     }
 
     &__section-1{
@@ -44,6 +45,31 @@
                     font-size: 24px;
                 }
             }
+        }
+    }
+
+    &__section-2{
+        &__title{
+
+        }
+
+        &__skill-group{
+            margin: auto;
+            width: 600px;
+
+            @media screen and (max-width: 640px) {
+                width: auto;
+                padding: 20px;
+            }
+        }
+    }
+
+    &__section-3{
+        background-color: hotpink;
+        box-sizing: border-box;
+        
+        &__title{
+
         }
     }
 }

@@ -1,4 +1,22 @@
 body{
     margin: 0px;
     padding: 0px;
+    font-family: Sansation;
+}
+
+.section-title{
+    font-size: 60px;
+    text-align: center;
+    margin: 0px;
+
+    @media screen and (max-width: 640px) {
+        font-size: 32px;
+    }
+}
+
+@font-face {
+  font-family: 'Sansation';
+  font-style: normal;
+  src: url('../../assets/fonts/Sansation_Regular.ttf');
+  /* IE9 Compat Modes */
 }

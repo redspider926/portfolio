@@ -1,0 +1,48 @@
+.component-skill{
+    margin-top: 30px;
+
+    &__title{
+        font-size: 24px;
+        margin-bottom: 12px;
+        transition: 0.3s;
+        font-weight: bolder;
+
+        @media screen and (max-width: 640px) {
+            font-size: 16px;
+        }
+    }
+
+    &__chart{
+        background-color: gray;
+        height: 20px;
+        flex: 1;
+        box-shadow: 0px 0px 10px gray;
+        transition: 0.3s;
+
+        &-value{
+            height: 100%;
+            background-color: white;
+            position: relative;
+
+            &-hover{
+                height: 100%;
+                background-color: blueviolet;
+                width: 0%;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    &:hover &__chart-value-hover{
+        width: 100%;
+    }
+
+    &:hover &__chart{
+        background-color: wheat;
+    }
+
+    &:hover &__title{
+        color: blueviolet;
+        margin-left: 30px;
+    }
+}
