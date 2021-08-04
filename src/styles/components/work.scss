@@ -1,21 +1,137 @@
 .component-work{
     height: 300px;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 
     @media screen and (max-width: 640px) {
         width: 100%;
     }
 
     &__thumbnail{
-        background-image: url('../../assets/images/background.jpg');
-        background-size: cover;
+        background-image: url('../../assets/images/2.jpg');
+        background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center;
-        width: 33.3%;
+        flex: 1;
+        transition: 0.3s;
+        position: relative;
+
+        &:after{
+            position: absolute;
+            content: "";
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            background-color: transparent;
+            transition: 0.3s;
+        }
     }
 
     &__description{
-        width: 66.7%;
+        flex: 2;
+        background: linear-gradient(90deg, #000000ff, #00000000);
+        position: relative;
+        overflow: hidden;
+
+        &-container{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            right: 100%;
+            background-color: blueviolet;
+            transition: 0.3s;
+        }
+
+        &-title{
+            position: absolute;
+            left: -300px;
+            top: 50px;
+            color: white;
+            font-size: 36px;
+            transition: 0.3s;
+        }
+
+        &-paragraph{
+            position: absolute;
+            left: -300px;
+            top: 50%;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        &-visit{
+            position: absolute;
+            left: -300px;
+            bottom: 50px;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+            height: 40px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            border: 2px solid white;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box;
+            cursor: pointer;
+
+            &:hover{
+                box-shadow: 0px 0px 10px white;
+            }
+        }
+
+        &-github{
+            position: absolute;
+            left: -150px;
+            bottom: 50px;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+            height: 40px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            border: 2px solid white;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box;
+            cursor: pointer;
+            
+            &:hover{
+                box-shadow: 0px 0px 10px white;
+            }
+        }
+    }
+
+    &:hover &__description-container{
+        right: 0px;
+    }
+
+    &:hover &__description-title{
+        left: 50px;
+    }
+
+    &:hover &__description-paragraph{
+        left: 50px;
+    }
+
+    &:hover &__description-visit{
+        left: 50px;
+    }
+
+    &:hover &__description-github{
+        left: 200px;
+    }
+
+    &:hover &__thumbnail{
+        background-size: 150% 150%;
+    }
+
+    &:hover &__thumbnail:after{
+        // background-color: rgba(255, 0, 111, 0.2);
     }
 }

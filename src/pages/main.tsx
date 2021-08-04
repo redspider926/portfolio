@@ -36,7 +36,9 @@ const PageMain: React.FC = () => {
                 </div>
             </div>
 
-            <div className="page-main__section-4"></div>
+            <div className="page-main__section-4">
+                <h2 className="page-main__section-4__title section-title">ABOUT ME</h2>
+            </div>
         </div>
     </Layout>
 }

@@ -47,7 +47,7 @@
 
     &__section-2{
         &__title{       
-            margin-bottom: 100px !important;   
+            margin-bottom: 100px !important;
             background: linear-gradient(90deg, #00000000, #000000ff, #00000000);
             color: white;
         }
@@ -56,7 +56,8 @@
             margin: auto;
             width: 600px;
             padding: 20px;
-            background-color: #00000088;
+            // background-color: #00000088;
+            background: linear-gradient(90deg, #000000ff, #00000000);
 
             @media screen and (max-width: 640px) {
                 width: auto;
@@ -81,6 +82,14 @@
             @media screen and (max-width: 640px) {
                 width: 100vw;
             }
+        }
+    }
+
+    &__section-4{
+        &__title{       
+            margin-bottom: 100px !important;
+            background: linear-gradient(90deg, #00000000, #000000ff, #00000000);
+            color: white;
         }
     }
 }
