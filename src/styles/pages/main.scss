@@ -121,7 +121,8 @@
                 display: inline-block;
                 background: linear-gradient(90deg, #000000ff, #00000000);
                 padding: 40px;
-                font-size: 20px;
+                font-size: 24px;
+                line-height: 36px;
                 box-sizing: border-box;
 
                 &__social{
@@ -140,6 +141,7 @@
                         text-decoration: none;
                         color: white;
                         font-size: 20px;
+                        line-height: 20px;
                     }
 
                     &:after{

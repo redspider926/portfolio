@@ -8,24 +8,12 @@
     }
 
     &__thumbnail{
-        background-image: url('../../assets/images/2.jpg');
-        background-size: 100% 100%;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: left;
         flex: 1;
         transition: 0.3s;
         position: relative;
-
-        &:after{
-            position: absolute;
-            content: "";
-            left: 0px;
-            right: 0px;
-            top: 0px;
-            bottom: 0px;
-            background-color: transparent;
-            transition: 0.3s;
-        }
     }
 
     &__description{
@@ -51,6 +39,7 @@
             color: white;
             font-size: 36px;
             transition: 0.3s;
+            opacity: 0;
         }
 
         &-paragraph{
@@ -60,11 +49,12 @@
             color: white;
             font-size: 18px;
             transition: 0.3s;
+            opacity: 0;
         }
 
         &-visit{
             position: absolute;
-            left: -300px;
+            left: -250px;
             bottom: 50px;
             color: white;
             font-size: 18px;
@@ -78,6 +68,8 @@
             padding-right: 20px;
             box-sizing: border-box;
             cursor: pointer;
+            opacity: 0;
+            text-decoration: none;
 
             &:hover{
                 box-shadow: 0px 0px 10px white;
@@ -100,6 +92,8 @@
             padding-right: 20px;
             box-sizing: border-box;
             cursor: pointer;
+            opacity: 0;
+            text-decoration: none;
             
             &:hover{
                 box-shadow: 0px 0px 10px white;
@@ -113,25 +107,25 @@
 
     &:hover &__description-title{
         left: 50px;
+        opacity: 1;
     }
 
     &:hover &__description-paragraph{
         left: 50px;
+        opacity: 1;
     }
 
     &:hover &__description-visit{
         left: 50px;
+        opacity: 1;
     }
 
     &:hover &__description-github{
-        left: 200px;
+        left: 150px;
+        opacity: 1;
     }
 
     &:hover &__thumbnail{
-        background-size: 150% 150%;
-    }
-
-    &:hover &__thumbnail:after{
-        // background-color: rgba(255, 0, 111, 0.2);
+        background-position: right;
     }
 }

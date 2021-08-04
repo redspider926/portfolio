@@ -4,6 +4,9 @@ import { Layout, Skill, Work } from '../components'
 import AvatarSource from '../assets/images/avatar.jpg'
 import LinkedInLogo from '../assets/images/icons/linkedin-logo.svg'
 import GithubLogo from '../assets/images/icons/github-logo.svg'
+import VirexImage from '../assets/images/virex.png'
+import SeededImage from '../assets/images/seeded.png'
+import KuulImage from '../assets/images/kuul.png'
 
 
 const PageMain: React.FC = () => {
@@ -32,10 +35,10 @@ const PageMain: React.FC = () => {
                 <h2 className="page-main__section-3__title section-title">MY WORKS</h2>
 
                 <div className="page-main__section-3__work-group">
-                    <Work title="Health Care App" paragraph="react" />
-                    <Work title="Health Care App" paragraph="react" />
-                    <Work title="Health Care App" paragraph="react" />
-                    <Work title="Health Care App" paragraph="react" />
+                    <Work title="Virex Landing Page Design" paragraph="react" visitURL="https://virex-landing.herokuapp.com/" githubURL="https://github.com/redspider926/VIREX" thumbnail={VirexImage} />
+                    <Work title="Seeded Landing Page Design" paragraph="react" visitURL="https://seeded-landing.herokuapp.com/" githubURL="https://github.com/redspider926/SEEDED" thumbnail={SeededImage} />
+                    <Work title="Kuul Finance Landing Page Design" paragraph="react" visitURL="https://kuul-finance.herokuapp.com/" githubURL="https://github.com/redspider926/KULL_FINANCE" thumbnail={KuulImage} />
+                    <Work title="Health Care App" paragraph="react native" visitURL="https://kuul-finance.herokuapp.com/" githubURL="https://github.com/redspider926/KULL_FINANCE" thumbnail={VirexImage} />
                 </div>
             </div>
 
@@ -48,10 +51,7 @@ const PageMain: React.FC = () => {
                     </div>
 
                     <div className="page-main__section-4__panel-right">
-                        I can help You with any stage of App development. It could include initial idea brainstorming, designing, app development and maintenance of an app on App Store. Sometimes I can’t fulfil your wishes alone. In this case, I’m also a capable project manager. I have an extensive network of other freelance developers who can help with more demanding tasks.
-                        I love new technologies and am always looking for interesting and challenging projects to work on. Currently I’m digging into Flutter for cross-platform development and SwiftUI for future native iOS projects.
-                        Don’t hesitate to contact me if you’re looking for an iOS developer. I can consult you on app development costs, technologies involved and give you a ballpark estimate on your idea rather quick. Later on I’ll be happy to assist you with production of the app.
-
+                        Since beginning my journey as a freelance developer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.
                         <div className="page-main__section-4__panel-right__social">
                             <img src={LinkedInLogo} alt="linkedin-logo" />
                             <a href="https://www.linkedin.com/in/piao-hu">https://www.linkedin.com/in/piao-hu</a>
