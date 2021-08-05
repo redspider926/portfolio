@@ -97,9 +97,11 @@
             width: 1200px;
             box-sizing: border-box;
             display: flex;
+            flex-direction: row;
 
             @media screen and (max-width: 640px) {
                 width: 100vw;
+                flex-direction: column;
             }
 
             &-left{
@@ -125,6 +127,10 @@
                 line-height: 36px;
                 box-sizing: border-box;
 
+                @media screen and (max-width: 640px) {
+                    font-size: 16px;
+                }
+
                 &__social{
                     margin-top: 20px;
                     display: flex;
@@ -142,6 +148,10 @@
                         color: white;
                         font-size: 20px;
                         line-height: 20px;
+
+                        @media screen and (max-width: 640px) {
+                            font-size: 12px;
+                        }
                     }
 
                     &:after{

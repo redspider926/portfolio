@@ -12,17 +12,17 @@ const Layout: React.FC = ({ children }) => {
                     HOME
                 </div>
                 <div className="component-layout-header__nav-item">
-                    WORKS
+                    SKILLS
                 </div>
                 <div className="component-layout-header__nav-item">
-                    SKILLS
+                    WORKS
                 </div>
                 <div className="component-layout-header__nav-item">
                     ABOUT
                 </div>
-                <div className="component-layout-header__nav-item">
+                {/* <div className="component-layout-header__nav-item">
                     CONTACT
-                </div>
+                </div> */}
             </div>
         </div>
         {children}
