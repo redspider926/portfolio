@@ -21,6 +21,7 @@ import ReactLogo from '../assets/images/icons/react.svg'
 import VueLogo from '../assets/images/icons/vue.svg'
 import EthereumLogo from '../assets/images/icons/ethereum.svg'
 import NodeLogo from '../assets/images/icons/node.svg'
+import ProjectLogo from '../assets/images/icons/project.svg'
 
 const Element = Scroll.Element;
 
@@ -88,6 +89,16 @@ const PageMain: React.FC = () => {
                                 <div className="page-main__section-2__skill-group__part-container-paragraph">Express + Mongodb/MySql/Postgres</div>
                                 <div className="page-main__section-2__skill-group__part-container-paragraph">Express + Soket.io</div>
                                 <div className="page-main__section-2__skill-group__part-container-paragraph">Express + Typeform</div>
+                            </div>
+                        </div>
+
+                        <div className="page-main__section-2__skill-group__part">
+                            <div className="page-main__section-2__skill-group__part-container">
+                                <img className="skill" alt="skill-blockchain" src={ProjectLogo} />
+                                <div className="page-main__section-2__skill-group__part-container-title">Project Management</div>
+                                <div className="page-main__section-2__skill-group__part-container-paragraph">Git, Github, GitLab</div>
+                                <div className="page-main__section-2__skill-group__part-container-paragraph">Bitbucket, Heroku</div>
+                                <div className="page-main__section-2__skill-group__part-container-paragraph">Trello, Asana</div>
                             </div>
                         </div>
                     </div>
