@@ -31,7 +31,7 @@ const PageMain: React.FC = () => {
                 <div className="page-main__section-1">
                     <div className="page-main__section-1__container">
                         <h1>Successful Development</h1>
-                        <h2>I am developer who has experience +7 years.</h2>
+                        <h2>I am developer who has experience +8 years.</h2>
                     </div>
                 </div>
             </Element>
@@ -123,7 +123,7 @@ const PageMain: React.FC = () => {
                         </div>
 
                         <div className="page-main__section-4__panel-right">
-                            Since beginning my journey as a freelance developer nearly 7 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.
+                            Since beginning my journey as a freelance developer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.
                         <div className="page-main__section-4__panel-right__social">
                                 <img src={LinkedInLogo} alt="linkedin-logo" />
                                 <a href="https://www.linkedin.com/in/piao-hu">https://www.linkedin.com/in/piao-hu</a>
