@@ -54,14 +54,64 @@
 
         &__skill-group{
             margin: auto;
-            width: 600px;
-            padding: 20px;
-            // background-color: #00000088;
-            background: linear-gradient(90deg, #000000ff, #00000000);
+            width: 1200px;
+            box-sizing: border-box;
+            background: linear-gradient(90deg, #000000ff, #000000aa, #000000ff);
 
             @media screen and (max-width: 640px) {
-                width: auto;
-                padding: 20px;
+                width: 100vw;
+            }
+
+            &__part{
+                width: 50%;
+                color: white;
+                display: inline-block;
+                box-sizing: border-box;
+                padding: 30px;
+                position: relative;
+
+                .skill{
+                    position: absolute;
+                    right: 60px;
+                    bottom: 60px;
+                    height: 60px;
+
+                    @media screen and (max-width: 640px) {
+                        right: 20px;
+                        bottom: 20px;
+                        height: 40px;
+                    }
+                }
+
+                @media screen and (max-width: 640px) {
+                    width: 100%;
+                    padding: 10px;
+                }
+
+                &-container{
+                    border: 3px solid white;
+                    padding: 20px;
+                    border-radius: 30px;
+
+                    &-title{
+                        font-size: 24px;
+                        font-weight: bolder;
+                        margin-bottom: 30px;
+
+                        @media screen and (max-width: 640px) {
+                           font-size: 20px;
+                        }
+                    }
+
+                    &-paragraph{
+                        font-size: 18px;
+                        margin-top: 10px;
+
+                        @media screen and (max-width: 640px) {
+                           font-size: 14px;
+                        }
+                    }
+                }                
             }
         }
     }

@@ -9,7 +9,12 @@
         padding: 40px;
         transition: 0.5s;
         z-index: 10;
-        box-shadow: 0px 0px 10px gray;
+        box-shadow: 0px 0px 10px black;
+
+        @media screen and (max-width: 640px) {
+            padding: 20px;
+        }
+
 
         &__logo{
 
@@ -17,7 +22,9 @@
 
         &__nav{
             display: flex;
+            width: 100%;
             align-items: center;
+            justify-content: flex-end;
             color: white;
             text-transform: uppercase;
 
@@ -48,6 +55,18 @@
                 }
             }
 
+        }
+
+        &__nav-mobile{
+            display: none;
+            height: 100%;
+            width: 100%;
+
+            @media screen and (max-width: 640px) {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
         }
     }
 }
